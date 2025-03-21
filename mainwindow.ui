@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WhiteBoard Demo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="documentviewer.qrc">
+    <normaloff>:/demos/documentviewer/images/qt-logo.png</normaloff>:/demos/documentviewer/images/qt-logo.png</iconset>
+   </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <!-- Botón de Files -->
+    <item>
+     <widget class="QPushButton" name="btnFiles">
+      <property name="text">
+       <string>Files</string>
+      </property>
+     </widget>
+    </item>
+    <!-- Botones de colores -->
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnBlue">
+        <property name="text">
+         <string>Blue</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRed">
+        <property name="text">
+         <string>Red</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnGreen">
+        <property name="text">
+         <string>Green</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <!-- WhiteBoard -->
+    <item>
+     <widget class="WhiteBoard" name="whiteboard"/>
+    </item>
+   </layout>
+  </widget>
+  <!-- Barra de estado -->
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="documentviewer.qrc"/>
+ </resources>
+</ui>
